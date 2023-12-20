@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk';
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+}
+.contaner{
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 10px 40px 4px hsl(241, 100%, 89%);
+}
+.result{
+    width: 370px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background: linear-gradient(to top,hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+    padding: 10px 60px;
+
+}
+.result h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: hsl(241, 100%, 89%);
+    padding-top: 30px;
+    letter-spacing: 1px;
+}
+.result .cercle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background: linear-gradient(to top, hsla(256, 72%, 46%, 0), hsla(241, 72%, 46%, 1));
+    margin: 30px 0; 
+}
+.result .cercle p {
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    font-weight: 800;
+}
+.result .cercle p span{
+    color: #fff;
+    font-weight: 700;
+    font-size: 70px;
+}
+.result h2{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.result p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+    padding: 30px 0;
+}
+.summary{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 40px;
+}
+.summary h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+
+
+.summary ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:n;
+}
+.summary ul li {
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 15px;
+    margin: 10px -10px;
+}
+.summary ul li i{
+    padding-right: 10px;
+}
+.summary ul li #pr{
+    position: absolute;
+    left: 615px;
+}
+.summary ul li .R{
+    color: hsl(0, 100%, 67%);
+}
+.summary ul li .Y{
+    color: hsl(39, 100%, 56%);
+}
+.summary ul li .G{
+    color: hsl(166, 100%, 37%);
+}
+.summary ul li .B{
+    color: hsl(234, 85%, 45%);
+}
+.summary ul li #pr span{
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+
+
+
+.summary ul .Reaction{
+ background-color:  hsl(0, 100%, 67%, 0.1);
+}
+.summary ul .Memory{
+ background-color:hsl(39, 100%, 56%, 0.1);
+}
+.summary ul .Verbal{
+    background-color:hsl(166, 100%, 37% ,0.1);
+}
+.summary ul .Visual{
+    background-color:hsl(234, 85%, 45%, 0.1);
+}
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(224, 30%, 27%);
+    color: #fff;
+    height: 50px;
+    border-radius: 900px;
+    margin-bottom:20px ;
+    
+}
+a:hover{
+    background-color: hsl(224, 35%, 21%);
+    color: #f0fdfa;
+}
+@media (max-width:375px){
+    .contaner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        width: 375px;
+    }
+    .result{
+        display: flex;
+        width: 378px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        margin-top: 198px;
+        
+    }
+    .summary ul li #pr {
+        position: absolute;
+        left: 260px
+    }
+    .result p{
+        
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: hsl(241, 100%, 89%);
+        padding: 30px 0;
+    }
+
+    .result h4{
+        font-size: 22px;
+        font-weight: 700;
+        color: hsl(241, 100%, 89%);
+        padding-top: 8px;
+        letter-spacing: 1px;
+    }
+    .result .cercle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background: linear-gradient(to top, hsla(256, 72%, 46%, 0), hsla(241, 72%, 46%, 1));
+        margin: 30px 0; 
+    }
+    .result p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: hsl(241, 100%, 89%);
+        padding: 0px 0;
+    }
+}
